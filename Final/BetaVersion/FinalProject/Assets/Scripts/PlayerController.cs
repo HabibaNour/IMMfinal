@@ -19,6 +19,8 @@ public class PlayerController : MonoBehaviour
     public AudioSource player;
     private SpawnManager spawnManager;
     public GameManager gameManager;
+    public ParticleSystem explosion;
+    public ParticleSystem ground;
 
     public bool hasPower;
     public int powerDuration = 5;
@@ -39,6 +41,7 @@ public class PlayerController : MonoBehaviour
         {
             playerRb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
             IsOnGround = false;
+            ground.Stop();
         }
 
     }
@@ -48,14 +51,17 @@ public class PlayerController : MonoBehaviour
         if (other.gameObject.CompareTag("Ground") && !gameOver)
         {
             IsOnGround = true;
+            ground.Play();
           
         }
         else if (other.gameObject.CompareTag("Fence"))
         {
             gameOver = true;
             player.PlayOneShot(crash, 1.0f);
+            explosion.Play();
             player.Stop();
             gameManager.GameOver();
+            ground.Stop();
 
         }
         else if (other.gameObject.CompareTag("Bone"))
