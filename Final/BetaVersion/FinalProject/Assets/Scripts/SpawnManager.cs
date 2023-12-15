@@ -19,10 +19,20 @@ public class SpawnManager : MonoBehaviour
     
     // Start is called before the first frame update
     void Start()
-    {
-        //setup for spawning 
-        InvokeRepeating("SpawnFoodObjects", delay, boneSpawn);
-        InvokeRepeating("SpawnObstacle", delay, intervalSpawn);
+    {if (SceneManager.GetActiveScene().name == "Level1")
+        {
+            //setup for spawning 
+            InvokeRepeating("SpawnFoodObjects", delay, boneSpawn);
+            InvokeRepeating("SpawnObstacle", delay, intervalSpawn);
+            
+        }
+        else if (SceneManager.GetActiveScene().name == "Level2")
+        {
+            boneSpawn = 1f;
+            intervalSpawn = 3f;
+            InvokeRepeating("SpawnFoodObjects", delay, boneSpawn);
+            InvokeRepeating("SpawnObstacle", delay, intervalSpawn);
+        }
         player = GameObject.Find("Player").GetComponent<PlayerController>();
         
     }
