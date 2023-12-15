@@ -20,6 +20,10 @@ TagManager:
   - back
   - menu
   - title
+  - LevelOne
+  - LevelTwo
+  - Highscore
+  - TotalScore
   layers:
   - Default
   - TransparentFX

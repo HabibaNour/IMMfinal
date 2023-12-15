@@ -1,0 +1,95 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &3999886293653015597
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: dd8f40b4217566d4b9c671ae4f9ab6f6, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: dd8f40b4217566d4b9c671ae4f9ab6f6, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2.3
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: dd8f40b4217566d4b9c671ae4f9ab6f6, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: dd8f40b4217566d4b9c671ae4f9ab6f6, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 8.6
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: dd8f40b4217566d4b9c671ae4f9ab6f6, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 3.2948077
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: dd8f40b4217566d4b9c671ae4f9ab6f6, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1.11
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: dd8f40b4217566d4b9c671ae4f9ab6f6, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7173339
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: dd8f40b4217566d4b9c671ae4f9ab6f6, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.63918465
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: dd8f40b4217566d4b9c671ae4f9ab6f6, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.20700635
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: dd8f40b4217566d4b9c671ae4f9ab6f6, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.18445435
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: dd8f40b4217566d4b9c671ae4f9ab6f6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -57.209
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: dd8f40b4217566d4b9c671ae4f9ab6f6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 79.663
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: dd8f40b4217566d4b9c671ae4f9ab6f6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -77.758
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: dd8f40b4217566d4b9c671ae4f9ab6f6, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 7c40589b5b9aaad469f067758a417470, type: 2}
+    - target: {fileID: 919132149155446097, guid: dd8f40b4217566d4b9c671ae4f9ab6f6, type: 3}
+      propertyPath: m_Name
+      value: steakAnimation
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: dd8f40b4217566d4b9c671ae4f9ab6f6, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5753323836067766317}
+  m_SourcePrefab: {fileID: 100100000, guid: dd8f40b4217566d4b9c671ae4f9ab6f6, type: 3}
+--- !u!1 &4270286239307493756 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: dd8f40b4217566d4b9c671ae4f9ab6f6, type: 3}
+  m_PrefabInstance: {fileID: 3999886293653015597}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &5753323836067766317
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4270286239307493756}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ef52e6f33b73fc43bbafae3a226ad8e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
