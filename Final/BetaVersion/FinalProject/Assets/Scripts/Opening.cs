@@ -11,6 +11,8 @@ public class Opening : MonoBehaviour
     public Button start;
     public Button instructionsB;
     public Button back;
+    public Button levelOne;
+    public Button levelTwo;
     // Start is called before the first frame update
     void Start()
     {
@@ -32,6 +34,8 @@ public class Opening : MonoBehaviour
         instructionsB.gameObject.SetActive(false);
         instructions.gameObject.SetActive(true);
         back.gameObject.SetActive(true);
+        levelOne.gameObject.SetActive(false);
+        levelTwo.gameObject.SetActive(false);
     }
     public void Back()
     {
@@ -39,5 +43,15 @@ public class Opening : MonoBehaviour
         instructionsB.gameObject.SetActive(true);
         instructions.gameObject.SetActive(false);
         back.gameObject.SetActive(false);
+        levelOne.gameObject.SetActive(true);
+        levelTwo.gameObject.SetActive(true);
+    }
+    public void LevelOne()
+    {
+        SceneManager.LoadSceneAsync(1);
+    }
+    public void LevelTwo()
+    {
+        SceneManager.LoadSceneAsync(2);
     }
 }
