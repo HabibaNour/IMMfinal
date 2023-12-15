@@ -11,6 +11,7 @@ public class PlayerController : MonoBehaviour
     public float gravityModifier;
     public bool IsOnGround = true;
     public bool gameOver = false;
+   
 
     
     public AudioClip bark;
@@ -41,7 +42,6 @@ public class PlayerController : MonoBehaviour
         }
 
     }
-
 
     private void OnCollisionEnter(Collision other)
     {
@@ -81,6 +81,7 @@ public class PlayerController : MonoBehaviour
 
         }
     }
+   
    
 
 }

@@ -65,6 +65,8 @@ public class GameManager : MonoBehaviour
     {
         if (score > 0) { 
         score += newScore;
+        timer += 5;   //the timer is going up for 5 seconds every time the player is scoring
+        
         }
         else
         {
@@ -113,5 +115,6 @@ public class GameManager : MonoBehaviour
     {
         SceneManager.LoadSceneAsync(0);
     }
+
 
 }
