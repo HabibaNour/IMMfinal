@@ -12,10 +12,11 @@ public class GameManager : MonoBehaviour
     public TextMeshProUGUI scoreText;
     public TextMeshProUGUI timerText;
     public TextMeshProUGUI finalScoreText;
-    public TextMeshProUGUI highScoreText;
+ 
     
     
     private int score;
+
     // inital value for timer
     public  float timer = 60.0f;
     public bool isGameActive;
@@ -27,6 +28,7 @@ public class GameManager : MonoBehaviour
     public Button levelOneEndScene;
     public TextMeshProUGUI gameOverText;
     public Button mainMenu;
+    public PlayerController playerController;
 
 
 
@@ -82,19 +84,11 @@ public class GameManager : MonoBehaviour
         scoreText.text = "Score: " + score;  //the score will be showing in the scoring text in unity when the game is on
     }
    
-   public void highScoreUpdate(){
-       if(PlayerPrefs.HasKey("saveHighScore")){
-
-        if(score > PlayerPrefs.GetInt("saveHighScore")){
-            PlayerPrefs.SetInt("saveHighScore", score);
-        }
-       }
-       else {
-           PlayerPrefs.SetInt("saveHighScore", score);
-       }
+   public void finalScoreUpdate(){
+       
+       score = 50 - score;
        finalScoreText.text = "Final Score: " + score.ToString();
-       highScoreText.text = PlayerPrefs.GetInt("saveHighScore").ToString();
-       highScoreText.text = "HighScore: " + score.ToString();
+       
    }
 
     // will change what appears when the game is over
@@ -107,10 +101,10 @@ public class GameManager : MonoBehaviour
             mainMenu.gameObject.SetActive(true);
             endScene.gameObject.SetActive(true);
             finalScoreText.gameObject.SetActive(true);
-            highScoreText.gameObject.SetActive(true);
+           
             isGameActive = false;
 
-            highScoreUpdate();
+            finalScoreUpdate();
         }
         else if  (SceneManager.GetActiveScene().name == "LevelTwo")
         {
@@ -120,14 +114,24 @@ public class GameManager : MonoBehaviour
             mainMenu.gameObject.SetActive(true);
             endScene.gameObject.SetActive(true);
             finalScoreText.gameObject.SetActive(true);
-            highScoreText.gameObject.SetActive(true);
+           
             isGameActive = false;
+            finalScoreUpdate();
         }
     }
     //will restart game
     public void RestartGame()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);   
+        if (SceneManager.GetActiveScene().name == "LevelOne") {
+            SceneManager.LoadScene("LevelOne");
+            playerController.gravityModifier = 2.0f;
+            playerController.jumpForce = 6;
+        }
+        else if (SceneManager.GetActiveScene().name == "LevelTwo")
+        {
+            SceneManager.LoadScene("LevelTwo");
+        }
+                    
     }
     // will load start menu
     public void MainMenu()

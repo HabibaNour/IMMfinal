@@ -7,8 +7,8 @@ using UnityEngine.SceneManagement;
 public class PlayerController : MonoBehaviour
 {
     private Rigidbody playerRb;
-    public float jumpForce = 0.5f;   //how high the player will jump
-    public float gravityModifier;
+    public float jumpForce = 6.0f;   //how high the player will jump
+    public float gravityModifier = 2.0f;
     public bool IsOnGround = true;
     public bool gameOver = false;
    
@@ -39,6 +39,7 @@ public class PlayerController : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Space)&& IsOnGround  && !gameOver)   //when we press the space bar the player will jump
         {
+            jumpForce = getJumpforce(jumpForce);
             playerRb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
             IsOnGround = false;
             ground.Stop();
@@ -71,7 +72,7 @@ public class PlayerController : MonoBehaviour
             player.PlayOneShot(bark, 1.0f);
             
             gameManager.AddScore(-1);
-            gameManager.highScoreUpdate();
+            gameManager.finalScoreUpdate();
            
             Destroy(other.gameObject);
 
@@ -85,8 +86,17 @@ public class PlayerController : MonoBehaviour
         {
             Destroy(other.gameObject);
             gameManager.AddScore(-1);
+            player.PlayOneShot(bark, 1.0f);
 
         }
+    }
+    public float getGravity(float gravity)
+    {
+        return gravity;
+    }
+    public float getJumpforce(float jumpforce)
+    {
+        return jumpforce;
     }
  
 }

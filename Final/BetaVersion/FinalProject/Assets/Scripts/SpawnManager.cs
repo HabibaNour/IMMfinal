@@ -26,7 +26,7 @@ public class SpawnManager : MonoBehaviour
             InvokeRepeating("SpawnObstacle", delay, intervalSpawn);
             
         }
-        else if (SceneManager.GetActiveScene().name == "Level2")
+        else if (SceneManager.GetActiveScene().name == "LevelTwo")
         {
             boneSpawn = 1f;
             intervalSpawn = 3f;
