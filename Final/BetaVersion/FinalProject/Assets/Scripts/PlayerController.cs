@@ -70,7 +70,7 @@ public class PlayerController : MonoBehaviour
             
             player.PlayOneShot(bark, 1.0f);
             
-            gameManager.AddScore(-1);
+            gameManager.AddScore(1);
            // gameManager.highScoreUpdate();
            
             Destroy(other.gameObject);
@@ -84,7 +84,7 @@ public class PlayerController : MonoBehaviour
         if (other.gameObject.CompareTag("Bone"))
         {
             Destroy(other.gameObject);
-            gameManager.AddScore(-1);
+            gameManager.AddScore(1);
 
         }
     }

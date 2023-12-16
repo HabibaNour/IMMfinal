@@ -47,9 +47,6 @@ public class SpawnManager : MonoBehaviour
 
             Instantiate(bonePrefab, spawnFoodLocation, bonePrefab.transform.rotation);
                 
-            
-            
-                
         }
     }
     //will spawn obstacles 
