@@ -1747,8 +1747,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scoreText: {fileID: 400109083}
   timerText: {fileID: 495767247}
-  finalScoreText: {fileID: 0}
-  highScoreText: {fileID: 0}
+  finalScoreText: {fileID: 1775110067}
+  highScoreText: {fileID: 1699667981}
   timer: 60
   isGameActive: 0
   scoreGame: {fileID: 400109080}
@@ -2098,17 +2098,9 @@ PrefabInstance:
       propertyPath: gameManager
       value: 
       objectReference: {fileID: 1169262279}
-    - target: {fileID: 2254982617813290509, guid: 6b70b5c4f6cc14dce95f85ff63762148, type: 3}
-      propertyPath: gravityModifier
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4338696340463474912, guid: 6b70b5c4f6cc14dce95f85ff63762148, type: 3}
-      propertyPath: m_Mass
-      value: 0.5
-      objectReference: {fileID: 0}
     - target: {fileID: 4338696340463474912, guid: 6b70b5c4f6cc14dce95f85ff63762148, type: 3}
       propertyPath: m_UseGravity
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5030052426582993370, guid: 6b70b5c4f6cc14dce95f85ff63762148, type: 3}
       propertyPath: m_IsTrigger
