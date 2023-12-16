@@ -105,6 +105,7 @@ public class GameManager : MonoBehaviour
         endScene.gameObject.SetActive(true);
         finalScoreText.gameObject.SetActive(true);
         highScoreText.gameObject.SetActive(true);
+        UpdateScore();
         isGameActive = false;
     }
     //will restart game

@@ -39,7 +39,7 @@ public class SpawnManager : MonoBehaviour
     //will spawn bones radnomly on y axis between 3 and 8
     void SpawnFoodObjects()
     {
-        Vector3 spawnFoodLocation = new Vector3(10, Random.Range(3, 8), 0);
+        Vector3 spawnFoodLocation = new Vector3(10, Random.Range(3, 6), 0);
        
         
         if (!player.gameOver)
