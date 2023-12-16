@@ -60,8 +60,9 @@ public class PlayerController : MonoBehaviour
             player.PlayOneShot(crash, 1.0f);
             explosion.Play();
             player.Stop();
-            gameManager.GameOver();
             ground.Stop();
+            gameManager.GameOver();
+            
 
         }
         else if (other.gameObject.CompareTag("Bone"))

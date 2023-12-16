@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 95110493196020864}
   - component: {fileID: 2254982617813290509}
   - component: {fileID: 5030052426582993370}
+  - component: {fileID: 4338696340463474912}
   m_Layer: 0
   m_Name: samoyed_dog_animated
   m_TagString: Player
@@ -80,7 +81,7 @@ MonoBehaviour:
   player: {fileID: 0}
   gameManager: {fileID: 0}
   explosion: {fileID: 2302701627616607950}
-  ground: {fileID: 0}
+  ground: {fileID: 7097579518335417259}
   hasPower: 0
   powerDuration: 5
 --- !u!65 &5030052426582993370
@@ -104,6 +105,33 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 5.632691, y: 6.7424526, z: 10.784502}
   m_Center: {x: -0.118016295, y: 2.8712254, z: -0.76354456}
+--- !u!54 &4338696340463474912
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1052956364922748}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &1091561121195122
 GameObject:
   m_ObjectHideFlags: 0
@@ -815,5 +843,10 @@ PrefabInstance:
 --- !u!4 &7097579518316000251 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1419152992, guid: fb82dfb8d1c7044c69afd2486befecb3, type: 3}
+  m_PrefabInstance: {fileID: 7097579519733054875}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &7097579518335417259 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 1438565936, guid: fb82dfb8d1c7044c69afd2486befecb3, type: 3}
   m_PrefabInstance: {fileID: 7097579519733054875}
   m_PrefabAsset: {fileID: 0}
