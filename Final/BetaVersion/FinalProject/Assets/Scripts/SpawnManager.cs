@@ -12,24 +12,26 @@ public class SpawnManager : MonoBehaviour
     // frequency of bone spawn and obstacle spawn
     private float boneSpawn = 1.5f;
     private float delay = 1;
-    private float intervalSpawn = 2f;
+    private float intervalSpawn = 3f;
     
     
     public PlayerController player;
     
     // Start is called before the first frame update
     void Start()
+        // spawning depends on the level. will make higher level harder than previous
     {if (SceneManager.GetActiveScene().name == "LevelOne")
         {
-            //setup for spawning 
+            
             InvokeRepeating("SpawnFoodObjects", delay, boneSpawn);
             InvokeRepeating("SpawnObstacle", delay, intervalSpawn);
             
         }
         else if (SceneManager.GetActiveScene().name == "LevelTwo")
         {
-            boneSpawn = 1f;
-            intervalSpawn = 3f;
+            // change intervals to change difficulty 
+            boneSpawn = 2.5f;
+            intervalSpawn = 2f;
             InvokeRepeating("SpawnFoodObjects", delay, boneSpawn);
             InvokeRepeating("SpawnObstacle", delay, intervalSpawn);
         }

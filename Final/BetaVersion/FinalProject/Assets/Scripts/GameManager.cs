@@ -83,10 +83,10 @@ public class GameManager : MonoBehaviour
 
         scoreText.text = "Score: " + score;  //the score will be showing in the scoring text in unity when the game is on
     }
-   
+   // will sho final score on game over scene 
    public void finalScoreUpdate(){
        
-       score = 50 - score;
+       
        finalScoreText.text = "Final Score: " + score.ToString();
        
    }
@@ -110,6 +110,7 @@ public class GameManager : MonoBehaviour
         {
             gameOverText.gameObject.SetActive(true);
             restartButton.gameObject.SetActive(true);
+            // adds button so player can go to previous level
             levelOneEndScene.gameObject.SetActive(true);
             mainMenu.gameObject.SetActive(true);
             endScene.gameObject.SetActive(true);
@@ -119,13 +120,11 @@ public class GameManager : MonoBehaviour
             finalScoreUpdate();
         }
     }
-    //will restart game
+    //will restart game to active scene
     public void RestartGame()
     {
         if (SceneManager.GetActiveScene().name == "LevelOne") {
             SceneManager.LoadScene("LevelOne");
-            playerController.gravityModifier = 2.0f;
-            playerController.jumpForce = 6;
         }
         else if (SceneManager.GetActiveScene().name == "LevelTwo")
         {
@@ -133,10 +132,15 @@ public class GameManager : MonoBehaviour
         }
                     
     }
+    // will load level one
+    public void LevelOne()
+    {
+        SceneManager.LoadScene("LevelOne");
+    }
     // will load start menu
     public void MainMenu()
     {
-        SceneManager.LoadSceneAsync(0);
+        SceneManager.LoadScene("Opening");
     }
 
 

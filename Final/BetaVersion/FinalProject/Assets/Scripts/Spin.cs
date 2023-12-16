@@ -14,6 +14,7 @@ public class Spin : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        // will spin bone 
         transform.Rotate(Vector3.up, spin * Time.deltaTime);
     }
 }

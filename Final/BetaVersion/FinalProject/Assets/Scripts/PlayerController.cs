@@ -7,30 +7,27 @@ using UnityEngine.SceneManagement;
 public class PlayerController : MonoBehaviour
 {
     private Rigidbody playerRb;
-    public float jumpForce = 6.0f;   //how high the player will jump
+    public GameManager gameManager;
+    public float jumpForce = 3.0f;   //how high the player will jump
     public float gravityModifier = 2.0f;
     public bool IsOnGround = true;
     public bool gameOver = false;
    
 
-    
+    // particles and sounds
     public AudioClip bark;
     public AudioClip crash;
     public AudioSource player;
-    private SpawnManager spawnManager;
-    public GameManager gameManager;
     public ParticleSystem explosion;
     public ParticleSystem ground;
 
-    public bool hasPower;
-    public int powerDuration = 5;
+   
 
     // Start is called before the first frame update
     void Start()
     {
         playerRb = GetComponent<Rigidbody>();   //calling the method in the Rigidbody to control over the force and the gravity
-        Physics.gravity *= gravityModifier;    //it will make the player to stay on ground
-        //player = GetComponent<AudioSource>();
+          
 
     }
 
@@ -39,9 +36,10 @@ public class PlayerController : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Space)&& IsOnGround  && !gameOver)   //when we press the space bar the player will jump
         {
-            jumpForce = getJumpforce(jumpForce);
+           
             playerRb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
             IsOnGround = false;
+            // makes sure particle stops playiing when in air
             ground.Stop();
         }
 
@@ -71,7 +69,7 @@ public class PlayerController : MonoBehaviour
             
             player.PlayOneShot(bark, 1.0f);
             
-            gameManager.AddScore(-1);
+            gameManager.AddScore(1);
             gameManager.finalScoreUpdate();
            
             Destroy(other.gameObject);
@@ -79,24 +77,18 @@ public class PlayerController : MonoBehaviour
         }
         
     }
+    // triggers on collision with bone 
     private void OnTriggerEnter(Collider other)
     {
         
         if (other.gameObject.CompareTag("Bone"))
         {
             Destroy(other.gameObject);
-            gameManager.AddScore(-1);
+            gameManager.AddScore(1);
             player.PlayOneShot(bark, 1.0f);
 
         }
     }
-    public float getGravity(float gravity)
-    {
-        return gravity;
-    }
-    public float getJumpforce(float jumpforce)
-    {
-        return jumpforce;
-    }
+    
  
 }

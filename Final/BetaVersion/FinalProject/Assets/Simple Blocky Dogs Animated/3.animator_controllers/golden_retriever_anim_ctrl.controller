@@ -3,8 +3,9 @@
 --- !u!91 &9100000
 AnimatorController:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_Name: golden_retriever_anim_ctrl
   serializedVersion: 5
   m_AnimatorParameters: []
@@ -23,10 +24,11 @@ AnimatorController:
     m_Controller: {fileID: 9100000}
 --- !u!1102 &1102063868964067760
 AnimatorState:
-  serializedVersion: 5
+  serializedVersion: 6
   m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_Name: walk_golden_retriever
   m_Speed: 1
   m_CycleOffset: 0
@@ -48,10 +50,11 @@ AnimatorState:
   m_TimeParameter: 
 --- !u!1102 &1102118511416286258
 AnimatorState:
-  serializedVersion: 5
+  serializedVersion: 6
   m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_Name: eating_golden_retriever
   m_Speed: 1
   m_CycleOffset: 0
@@ -73,10 +76,11 @@ AnimatorState:
   m_TimeParameter: 
 --- !u!1102 &1102137929172806630
 AnimatorState:
-  serializedVersion: 5
+  serializedVersion: 6
   m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_Name: sitting_golden_retriever
   m_Speed: 1
   m_CycleOffset: 0
@@ -98,10 +102,11 @@ AnimatorState:
   m_TimeParameter: 
 --- !u!1102 &1102199800028579106
 AnimatorState:
-  serializedVersion: 5
+  serializedVersion: 6
   m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_Name: all_golden_retriever
   m_Speed: 1.5
   m_CycleOffset: 0
@@ -123,10 +128,11 @@ AnimatorState:
   m_TimeParameter: 
 --- !u!1102 &1102581829499988784
 AnimatorState:
-  serializedVersion: 5
+  serializedVersion: 6
   m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_Name: laying_golden_retriever
   m_Speed: 1
   m_CycleOffset: 0
@@ -148,10 +154,11 @@ AnimatorState:
   m_TimeParameter: 
 --- !u!1102 &1102596922780574600
 AnimatorState:
-  serializedVersion: 5
+  serializedVersion: 6
   m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_Name: turning_golden_retriever
   m_Speed: 1
   m_CycleOffset: 0
@@ -173,10 +180,11 @@ AnimatorState:
   m_TimeParameter: 
 --- !u!1102 &1102965877549855426
 AnimatorState:
-  serializedVersion: 5
+  serializedVersion: 6
   m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_Name: standing_golden_retriever
   m_Speed: 1
   m_CycleOffset: 0
@@ -198,15 +206,16 @@ AnimatorState:
   m_TimeParameter: 
 --- !u!1107 &1107046669820824962
 AnimatorStateMachine:
-  serializedVersion: 5
+  serializedVersion: 6
   m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_Name: Base Layer
   m_ChildStates:
   - serializedVersion: 1
     m_State: {fileID: 1102199800028579106}
-    m_Position: {x: 264, y: 108, z: 0}
+    m_Position: {x: 440, y: 110, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 1102118511416286258}
     m_Position: {x: 48, y: 168, z: 0}
@@ -224,7 +233,7 @@ AnimatorStateMachine:
     m_Position: {x: 264, y: 228, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 1102063868964067760}
-    m_Position: {x: 480, y: 228, z: 0}
+    m_Position: {x: 320, y: 50, z: 0}
   m_ChildStateMachines: []
   m_AnyStateTransitions: []
   m_EntryTransitions: []
@@ -234,4 +243,4 @@ AnimatorStateMachine:
   m_EntryPosition: {x: 48, y: 108, z: 0}
   m_ExitPosition: {x: 48, y: 36, z: 0}
   m_ParentStateMachinePosition: {x: 800, y: 20, z: 0}
-  m_DefaultState: {fileID: 1102199800028579106}
+  m_DefaultState: {fileID: 1102063868964067760}
