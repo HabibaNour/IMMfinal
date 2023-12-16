@@ -92,7 +92,8 @@ public class GameManager : MonoBehaviour
            PlayerPrefs.SetInt("saveHighScore", score);
        }
        finalScoreText.text = score.ToString();
-       highScoreText.text = PlayerPrefs.GetInt("saveHighScore").ToString();
+       //highScoreText.text = PlayerPrefs.GetInt("saveHighScore").ToString();
+       highScoreText.text = score.ToString();
    }
 
     // will change what appears when the game is over
@@ -105,8 +106,9 @@ public class GameManager : MonoBehaviour
         endScene.gameObject.SetActive(true);
         finalScoreText.gameObject.SetActive(true);
         highScoreText.gameObject.SetActive(true);
-        UpdateScore();
         isGameActive = false;
+
+        highScoreUpdate();
     }
     //will restart game
     public void RestartGame()
