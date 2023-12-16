@@ -36,7 +36,7 @@ public class GameManager : MonoBehaviour
     void Start()
     {
        
-        score = 50;   //when the game starts the score will start from 50. 
+        score = 0;   //when the game starts the score will start from 50. 
                       //the score will decrease each time the player get a bone
        
     } 
@@ -66,7 +66,7 @@ public class GameManager : MonoBehaviour
     // will update scores when bones are got
     public void AddScore(int newScore)
     {
-        if (score > 0) { 
+        if (score < 50) { 
         score += newScore;
         timer += 5;   //the timer is going up for 5 seconds every time the player is scoring
         
