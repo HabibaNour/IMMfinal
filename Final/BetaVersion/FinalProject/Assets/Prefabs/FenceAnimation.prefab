@@ -56,6 +56,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: FenceAnimation
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1fe925ad5a0284c49a2489d1e41083ec, type: 3}
+      propertyPath: m_TagString
+      value: Fence
+      objectReference: {fileID: 0}
     - target: {fileID: 2480089839769031993, guid: 1fe925ad5a0284c49a2489d1e41083ec, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 

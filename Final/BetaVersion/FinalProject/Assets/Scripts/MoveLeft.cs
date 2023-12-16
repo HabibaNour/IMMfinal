@@ -15,7 +15,7 @@ void Start(){
 }
 
 void Update(){
-    if(!playerControllerScript.gameOver){
+    if(playerControllerScript.gameOver == false){
         transform.Translate(Vector3.left * Time.deltaTime * speed,Space.World);
 }
 }
