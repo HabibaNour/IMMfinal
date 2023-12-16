@@ -24,6 +24,7 @@ public class GameManager : MonoBehaviour
     // game over scene objects
     public Image endScene;
     public Button restartButton;
+    public Button levelOneEndScene;
     public TextMeshProUGUI gameOverText;
     public Button mainMenu;
 
@@ -70,7 +71,7 @@ public class GameManager : MonoBehaviour
         }
         else
         {
-            GameOver();
+            SceneManager.LoadScene("LevelTwo");
         }
     }
     //will update text
@@ -91,24 +92,37 @@ public class GameManager : MonoBehaviour
        else {
            PlayerPrefs.SetInt("saveHighScore", score);
        }
-       finalScoreText.text = score.ToString();
-       //highScoreText.text = PlayerPrefs.GetInt("saveHighScore").ToString();
-       highScoreText.text = score.ToString();
+       finalScoreText.text = "Final Score: " + score.ToString();
+       highScoreText.text = PlayerPrefs.GetInt("saveHighScore").ToString();
+       highScoreText.text = "HighScore: " + score.ToString();
    }
 
     // will change what appears when the game is over
     public void GameOver()
     {
+        if (SceneManager.GetActiveScene().name == "LevelOne")
+        {
+            gameOverText.gameObject.SetActive(true);
+            restartButton.gameObject.SetActive(true);
+            mainMenu.gameObject.SetActive(true);
+            endScene.gameObject.SetActive(true);
+            finalScoreText.gameObject.SetActive(true);
+            highScoreText.gameObject.SetActive(true);
+            isGameActive = false;
 
-        gameOverText.gameObject.SetActive(true);   
-        restartButton.gameObject.SetActive(true);   
-        mainMenu.gameObject.SetActive(true);
-        endScene.gameObject.SetActive(true);
-        finalScoreText.gameObject.SetActive(true);
-        highScoreText.gameObject.SetActive(true);
-        isGameActive = false;
-
-        highScoreUpdate();
+            highScoreUpdate();
+        }
+        else if  (SceneManager.GetActiveScene().name == "LevelTwo")
+        {
+            gameOverText.gameObject.SetActive(true);
+            restartButton.gameObject.SetActive(true);
+            levelOneEndScene.gameObject.SetActive(true);
+            mainMenu.gameObject.SetActive(true);
+            endScene.gameObject.SetActive(true);
+            finalScoreText.gameObject.SetActive(true);
+            highScoreText.gameObject.SetActive(true);
+            isGameActive = false;
+        }
     }
     //will restart game
     public void RestartGame()

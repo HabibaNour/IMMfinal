@@ -62,7 +62,7 @@ public class PlayerController : MonoBehaviour
             player.Stop();
             ground.Stop();
             gameManager.GameOver();
-            
+
 
         }
         else if (other.gameObject.CompareTag("Bone"))
@@ -71,7 +71,7 @@ public class PlayerController : MonoBehaviour
             player.PlayOneShot(bark, 1.0f);
             
             gameManager.AddScore(-1);
-           // gameManager.highScoreUpdate();
+            gameManager.highScoreUpdate();
            
             Destroy(other.gameObject);
 
@@ -88,7 +88,5 @@ public class PlayerController : MonoBehaviour
 
         }
     }
-   
-   
-
+ 
 }

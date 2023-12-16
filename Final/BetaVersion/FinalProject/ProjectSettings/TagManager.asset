@@ -24,6 +24,7 @@ TagManager:
   - LevelTwo
   - Highscore
   - TotalScore
+  - LEVELoNEEND
   layers:
   - Default
   - TransparentFX
