@@ -1,0 +1,44 @@
+
+Sources:
+
+Website to get the 3D images for the fence and the steak
+Fence:
+FenceAnimation (https://rigmodels.com/model.php?view=Fence-3d-model__JXGQO8CSI6A0F71GQOG24CBMD&searchkeyword=fence&manualsearch=1)
+Steak:
+SteakAnimation (https://rigmodels.com/model.php?view=Class_A_Meat-3d model__dc81f61536a54e1ab9ece9ed85b3ea0d&searchkeyword=steak&manualsearch=1)
+
+
+The website that converts the image type to FBX:
+JPG to FBX: online JPG to FBX converter for free (aspose.app)
+
+
+Simple Blocky Dogs Animated 
+prefabs used: Level One: samoyed_dogs_animated & Level Two: golden_retreiver_animated
+Unchanged for game
+https://assetstore.unity.com/packages/3d/characters/animals/mammals/simple-blocky-dogs-animated-123259
+ 
+Simple Foods
+Used: Level Two: Drumstick
+Unchanged for game
+https://assetstore.unity.com/packages/3d/props/food/simple-foods-207032
+
+DogBarks 1.0 
+Files used: Level One: 0011AK_R_24_DogBarkSix   &  Level Two: 0006AF_L_24_DogBarkOne
+Unchanged for game
+https://assetstore.unity.com/packages/audio/sound-fx/animals/dog-barks-1-0-35370
+
+Music tracks
+Files used
+ Opening: Potato
+ Level One: Chunky_Monkey
+ Level Two: JumpyGame
+Unused for game
+https://assetstore.unity.com/packages/audio/music/free-music-tracks-for-games-156413
+
+Free 2D Cartoon Parallax Background 
+In FullBG folder files used:
+ Opening: Graveyard
+ Level One: Backgound2
+ Level Two: Mountain
+Unchanged for game
+https://assetstore.unity.com/packages/2d/environments/free-2d-cartoon-parallax-background-205812
