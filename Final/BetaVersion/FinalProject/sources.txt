@@ -1,11 +1,16 @@
 
 Sources:
 
+Website to get the 3D images for the fence and the steak
+Fence:
+FenceAnimation (https://rigmodels.com/model.php?view=Fence-3d-model__JXGQO8CSI6A0F71GQOG24CBMD&searchkeyword=fence&manualsearch=1)
+Steak:
+SteakAnimation (https://rigmodels.com/model.php?view=Class_A_Meat-3d model__dc81f61536a54e1ab9ece9ed85b3ea0d&searchkeyword=steak&manualsearch=1)
+
+
 The website that converts the image type to FBX:
 JPG to FBX: online JPG to FBX converter for free (aspose.app)
 
-Fence and the steak images:
-Class A Meat 3D Model (rigmodels.com)
 
 Simple Blocky Dogs Animated 
 prefabs used: Level One: samoyed_dogs_animated & Level Two: golden_retreiver_animated

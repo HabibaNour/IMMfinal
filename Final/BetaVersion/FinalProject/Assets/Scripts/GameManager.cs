@@ -36,7 +36,8 @@ public class GameManager : MonoBehaviour
     void Start()
     {
        
-        score = 0;   //the score will start from 0 
+        score = 0;   //the score will start from 0
+                      //the score is going to increase by 1 point
        
     } 
 
