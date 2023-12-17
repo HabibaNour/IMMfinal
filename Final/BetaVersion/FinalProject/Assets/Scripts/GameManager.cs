@@ -36,8 +36,7 @@ public class GameManager : MonoBehaviour
     void Start()
     {
        
-        score = 0;   //when the game starts the score will start from 50. 
-                      //the score will decrease each time the player get a bone
+        score = 0;   //the score will start from 0 
        
     } 
 
@@ -83,7 +82,7 @@ public class GameManager : MonoBehaviour
 
         scoreText.text = "Score: " + score;  //the score will be showing in the scoring text in unity when the game is on
     }
-   // will sho final score on game over scene 
+   // will show final score on game over scene 
    public void finalScoreUpdate(){
        
        

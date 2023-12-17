@@ -3,7 +3,10 @@ guid: df7e5d7ec7c126c48b17480c81771a5f
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - fencePrefab: {fileID: 7045142376882035649, guid: b11ca25e88feee843abdd9cd49a3617d, type: 3}
+  - bonePrefab: {fileID: 4270286239307493756, guid: eb426b183df34c149912331d2c0178f6, type: 3}
+  - player: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
