@@ -7,17 +7,33 @@ JPG to FBX: online JPG to FBX converter for free (aspose.app)
 Fence and the steak images:
 Class A Meat 3D Model (rigmodels.com)
 
-Blocky dogs
+Simple Blocky Dogs Animated 
+prefabs used: Level One: samoyed_dogs_animated & Level Two: golden_retreiver_animated
+Unchanged for game
 https://assetstore.unity.com/packages/3d/characters/animals/mammals/simple-blocky-dogs-animated-123259
  
 Simple Foods
+Used: Level Two: Drumstick
+Unchanged for game
 https://assetstore.unity.com/packages/3d/props/food/simple-foods-207032
 
-Dog barks
+DogBarks 1.0 
+Files used: Level One: 0011AK_R_24_DogBarkSix   &  Level Two: 0006AF_L_24_DogBarkOne
+Unchanged for game
 https://assetstore.unity.com/packages/audio/sound-fx/animals/dog-barks-1-0-35370
 
 Music tracks
+Files used
+ Opening: Potato
+ Level One: Chunky_Monkey
+ Level Two: JumpyGame
+Unused for game
 https://assetstore.unity.com/packages/audio/music/free-music-tracks-for-games-156413
 
-Background
+Free 2D Cartoon Parallax Background 
+In FullBG folder files used:
+ Opening: Graveyard
+ Level One: Backgound2
+ Level Two: Mountain
+Unchanged for game
 https://assetstore.unity.com/packages/2d/environments/free-2d-cartoon-parallax-background-205812
