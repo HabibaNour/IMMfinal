@@ -1,6 +1,0 @@
-sceneSetups:
-- path: C:/Users/habib/Downloads/Hungry_Dog_Alpha-main (3)/Hungry_Dog_Alpha-main/Hungry
-    Dog alpha/Assets/Scenes/AlphaScene.unity
-  isLoaded: 1
-  isActive: 1
-  isSubScene: 0
