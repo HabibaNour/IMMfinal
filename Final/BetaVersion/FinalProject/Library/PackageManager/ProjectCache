@@ -5,24 +5,15 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-<<<<<<< HEAD
       ticks: 638381053722788540
     m_Hash: 281888041
-=======
-      ticks: 638383693906557566
-    m_Hash: 290068456
->>>>>>> 5f56a009a278e0dd591e2c497bb9146102b78712
   m_LockFileStatus:
     m_FilePath: C:/Users/habib/OneDrive/Desktop/IMMFinal/IMMfinal/Final/BetaVersion/FinalProject/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-<<<<<<< HEAD
       ticks: 638383325335242664
-=======
-      ticks: 638383693906557566
->>>>>>> 5f56a009a278e0dd591e2c497bb9146102b78712
     m_Hash: 3471906901
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
